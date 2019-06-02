@@ -4,7 +4,7 @@ from django.utils import timezone
 
 
 class Post(models.Model):
-    img = models.TextField(default="")
+    image = models.TextField(default="")
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
