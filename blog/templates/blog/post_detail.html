@@ -9,5 +9,9 @@
         {% endif %}
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
+         {% if post.img %}
+            <img src=  {{ post.img }} >
+               
+        {% endif %}
     </div>
 {% endblock %}
